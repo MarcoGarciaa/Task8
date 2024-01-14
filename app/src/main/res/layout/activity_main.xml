@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,34 +20,20 @@
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="250dp"
             android:layout_gravity="center"
             android:layout_marginStart="60dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="60dp"
-            android:layout_marginBottom="250dp"
+
             android:src="@drawable/caballo" />
-
-        <!--LOGO
-
-
-
-        <VideoView
-            android:id="@+id/video"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/logo_app_blue"
-            />
-        -->
 
         <!--USERNAME-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="60dp">
 
             <EditText
@@ -56,10 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/icon_account"
-                android:drawablePadding="10dp"
-                android:hint="@string/username"
-                android:importantForAutofill="no"
-                android:inputType="text" />
+                android:hint="@string/username"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,44 +66,50 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--BUTON LOGIN-->
-        <Button
-            android:id="@+id/btnLogin"
-            style="?attr/materialButtonOutlinedStyle"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="60dp"
-            android:backgroundTint="@color/primaryColor"
-            android:elevation="2dp"
-            android:shadowColor="#5C5C5C"
-            android:text="@string/login"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="5dp"
-            app:strokeColor="#FFFFFF" />
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="122dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#bf7e68"
+                android:elevation="2dp"
+                android:shadowColor="#5C5C5C"
+                android:text="@string/login"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/btnSingIn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#bf7e68"
+                android:elevation="2dp"
+                android:shadowColor="#5C5C5C"
+                android:text="@string/singIn"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp"
+                app:strokeColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!--BUTON LOGIN-->
 
 
         <!--BUTON SING IN-->
-        <Button
-            android:id="@+id/btnSingIn"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="60dp"
-            android:backgroundTint="@color/secondaryColor"
-            android:elevation="2dp"
-            android:shadowColor="#5C5C5C"
-            android:text="@string/singIn"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="5dp"
-            app:strokeColor="#FFFFFF" />
+
 
         <!--BUTON FORGOT PASSWORD-->
         <Button
