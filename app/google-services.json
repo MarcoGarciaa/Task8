@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711162513404",
+    "project_id": "task8-52660",
+    "storage_bucket": "task8-52660.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711162513404:android:095b0e640dabd6660fd479",
+        "android_client_info": {
+          "package_name": "com.example.task08guiloginyregistro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVJCv0kwcbPrkxCYkqrmop771lXAeZRQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
